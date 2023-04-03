@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/008/266/680/original/abstract-luxury-line-background-for-presentation-poster-website-etc-free-vector.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.head2{
+    color: blueviolet;
+}
+.tabs{
+    margin-left: 25px;
+    font-size: 23px;
+    cursor: pointer;
+}
+.doc-div{
+    margin-left: 10%;
+    margin-top: 2%;
+    color: white;
+}
+.doc-div h1{
+    font-size: 50px;
+}
+.doc-div h3{
+    font-size: 30px;
+    margin-top: 20px;
+}
+.doc-div ul {
+    list-style-type: square;
+    font-size: 25px;
+    background-color: rgba(42, 42, 42, 0.63);
+    max-width: fit-content;
+    padding: 30px;
+    border-radius: 25px;
+}
+.doc-div li{
+    width: 60vw;
+    margin: 20px;
+}
+.documentation{
+    font-size: 30px;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+    margin: 3%;
+}
+.about h1{
+    background-color: black;
+    max-width: fit-content;
+    padding: 10px;
+    border: 10px solid orange;
+    margin-left: 7%;
+}
+.intro{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+}
+.intro p {
+    width: 50%;
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.637);
+    color: black;
+    padding: 50px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.features{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: orange;
+    border-radius: 25px;
+    width: 93vw;
+    padding: 60px;
+}
+.features ul{
+    list-style-type: circle;
+    width: 50%;
+    font-size: 30px;
+}
+.features ul *{
+    margin-bottom: 20px;
+}
+.img-tag{
+    width: 30%;
+}
+
+.contact{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    transform: translate(45%);
+}
+.links{
+    display: flex;
+    transform: translateX(-18%);
+}
+.lnk{
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.697);
+    color: white;
+    padding: 20px;
+    border-radius: 25px;
+    width: fit-content;
+    margin: 30px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.lnk:hover{
+    transform: scale(1.1,1.1);
+}
+.avatar{
+    width: 170px;
+    border-radius: 50%;
+}

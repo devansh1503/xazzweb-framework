@@ -1,0 +1,9 @@
+How to create a website on this framework-
+
+#1- Tags- DivTag, InputTag, ButtonTag, TextTag
+
+#2- Create- The create function takes 2 arguments for TextTag (Type of tag in inverted comas, Attributes), 
+    To specify the class of the element, use className key. eg:- DivTag.create({attribute: value})
+
+#3- Utils- To add children to a class, or to add style to an element or many elements use- CreateChildren, AddStyle, AddStyleAll.
+    These functions must have two parameters- (element, {attribute: value})
