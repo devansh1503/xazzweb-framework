@@ -16,6 +16,14 @@ class ButtonTag{
                 Util.LinkTo(ele,value);
                 continue;
             }
+            if(att === "onClick"){
+                Util.onclickhandle(ele,value,'click')
+                continue;
+            }
+            if(att === "onChange"){
+                Util.onclickhandle(ele,value,'change')
+                continue;
+            }
             ele.setAttribute(att,value);
         }
         return ele;

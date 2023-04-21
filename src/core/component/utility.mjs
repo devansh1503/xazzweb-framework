@@ -21,6 +21,9 @@ class Util{
             Router.openRoute(route)
         }
     }
+    static onclickhandle(ele,func,event){
+        ele.addEventListener((event),func);
+    }
     
 }
 export default Util;

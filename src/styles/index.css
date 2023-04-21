@@ -6,8 +6,8 @@
 body{
     display: flex;
     justify-content: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url('https://static.vecteezy.com/system/resources/previews/008/266/680/original/abstract-luxury-line-background-for-presentation-poster-website-etc-free-vector.jpg');
+    font-family: Century Gothic;
+    background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -17,6 +17,19 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+.logo {
+    color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px rgb(166, 0, 255),
+      0 0 82px rgb(166, 0, 255),
+      0 0 92px rgb(166, 0, 255),
+      0 0 102px rgb(166, 0, 255),
+      0 0 151px rgb(166, 0, 255);
+  }
 
 .head2{
     color: blueviolet;
@@ -66,7 +79,7 @@ body{
     background-color: black;
     max-width: fit-content;
     padding: 10px;
-    border: 10px solid orange;
+    border: 10px solid rgb(163, 0, 181);
     margin-left: 7%;
 }
 .intro{
@@ -88,7 +101,6 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: orange;
     border-radius: 25px;
     width: 93vw;
     padding: 60px;
@@ -112,11 +124,9 @@ body{
     justify-content: space-around;
     align-items: center;
     color: white;
-    transform: translate(45%);
 }
 .links{
     display: flex;
-    transform: translateX(-18%);
 }
 .lnk{
     font-size: 25px;

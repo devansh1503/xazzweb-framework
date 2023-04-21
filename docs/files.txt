@@ -1,9 +1,0 @@
-The src/ folder contains the source code of the framework, which is divided into subdirectories based on functionality. The core/ directory contains the core features of the framework such as data binding, component management, routing, and state management. The utils/ directory contains utility functions such as DOM manipulation, HTTP requests, and storage management. The components/ directory contains pre-built UI components that can be used in the application. The styles/ directory contains the CSS stylesheets used in the framework.
-
-The app.js file is the entry point of the framework and contains the initialization code. The index.html file is a sample HTML file that uses the framework.
-
-The dist/ folder contains the distribution files of the framework, which include a minified version of the framework for production use.
-
-The examples/ folder contains example HTML files that showcase the usage of the framework.
-
-The docs/ folder contains the documentation of the framework.

@@ -12,7 +12,7 @@ const intro = "This is a Web Framework built independently as a project, you mig
 const introtag = TextTag.create("p",{content:intro})
 const imgintro = ImageTag.create("https://cdn-icons-png.flaticon.com/512/5167/5167580.png",{className:'img-tag'})
 const introdiv = DivTag.create({className:'intro'})
-Util.CreateChildren(introdiv,[imgintro,introtag])
+Util.CreateChildren(introdiv,[introtag])
 
 
 

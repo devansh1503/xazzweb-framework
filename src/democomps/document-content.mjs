@@ -10,13 +10,17 @@ const tagcontent = [
     "TextTag- Use TextTag.create(tag_type, {attribute:value} to create p,h1,h2 etc. tags (specify the type as first parameter)",
     "ButtonTag- Use ButtonTag.create({attribut:value}) to create a button",
     "ListTag- Use ListTag.create([array of elements],{attributes:value})",
-    "InputTag- Use InputTag.create({attribute:value})"
+    "InputTag- Use InputTag.create({attribute:value}), returns a block element",
+    "FormTag- Use FormTag.create({attribute:value}) to create a form, and the add input tags, and buttons as children",
+    "TableTag- Use new TableDiv() to create a table, and table.createRow([elements],{heading=true/false}) to create row (either a heading or not), remember to export .table from the object that you create"
 ]
 const attrcontent = [
     "className: Specify the attribute className, to add class in the tag",
     "linkTo: To link an element to a particual route use linkTo attribute (used only in TextTag, and ButtonTag)",
     "content: To write content to a TextTag, use content attribute",
-    "id: To add ID to an element add this attribute to the element"
+    "id: To add ID to an element add this attribute to the element",
+    "preventSubmit: Prevents the default behaviour of form of submitting (mandatory) values-true/false",
+    "label: Used in InputTag to specify the label, and must be used along with id attribute"
 ]
 const domcontent = [
     "All the DOM elements must be added in app.js file",

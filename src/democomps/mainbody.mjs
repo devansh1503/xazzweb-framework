@@ -1,17 +1,21 @@
 import ButtonTag from "../core/component/button.mjs";
 import DivTag from "../core/component/div.mjs";
+import ImageTag from "../core/component/image.mjs";
 import LinkTag from "../core/component/link.mjs";
 import TextTag from "../core/component/text.mjs";
 import Util from "../core/component/utility.mjs";
-import form from "./newsletter.mjs";
+import XazzWeb from "../utils/dom.mjs";
+
 
 const headtext = TextTag.create("h1",{content:"Hi! Hope Your Are Doing Great!"})
 const midtext = TextTag.create("p",{content:"This is the official website for Xazzweb framework, and, This website is also built with the same framework!"})
+const wellimg = ImageTag.create("https://media.baamboozle.com/uploads/images/123844/1655515629_1061284_gif-url.gif",{class:'roboimg'})
 const button = ButtonTag.create({content:"Get Started",linkTo:'/doc'})
 const github = LinkTag.create("https://github.com/devansh1503/xazzweb-framework",{content:"Source Code"})
-
+const leftdiv = DivTag.create()
 const mainbody = DivTag.create({className:"middle"})
-Util.CreateChildren(mainbody,[headtext,midtext,button,github])
+Util.CreateChildren(leftdiv,[headtext,midtext,button,github])
+Util.CreateChildren(mainbody,[leftdiv,wellimg])
 
 const headStl = {
     color:'white',
@@ -46,7 +50,8 @@ const gitstl = {
 }
 const mainstl = {
     marginLeft:'13%',
-    marginTop:'5%'
+    marginTop:'5%',
+    display:'flex',
 }
 Util.AddStyle(button,butstl)
 Util.AddStyle(headtext,headStl)

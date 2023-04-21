@@ -1,16 +1,19 @@
-import wrapdiv from "../components/counter.mjs";
 import XazzWeb from "../utils/dom.mjs";
 
 class State{
-    constructor(attr={}){
-        this.data = attr;
+    constructor(){
+        this.states = {};0
+    }
+    addState(key,value){
+        this.states[key] = value;
     }
     setState(key,value){
-        this.data[key] = value;
-        XazzWeb.renderDom()
+        this.states[key] = value;
     }
-    get(key){
-        return this.data[key];
+    getValue(key){
+        return this.states[key];
     }
+
 }
-export default State
+
+export default State;
