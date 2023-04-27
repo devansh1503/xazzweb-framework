@@ -10,6 +10,7 @@ const doc = TextTag.create("p",{content:"Documentation",linkTo:'/doc'})
 const home = TextTag.create("p",{content:'Home', linkTo:'/'})
 const about = TextTag.create("p",{content:'About', linkTo:'/about'})
 const con = TextTag.create("p",{content:"Contacts",linkTo:'/contact'})
+const cnt = TextTag.create("p",{content:"Counter",linkTo:'/counter'})
 
 const tabs = ListTag.create([home, about,doc,con], {className:"tabs"})
 

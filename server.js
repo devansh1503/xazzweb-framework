@@ -1,9 +1,9 @@
 const http = require('http');
 const fs = require('fs')
-const path = require('path')
+const path = require('path');
 
 const server = http.createServer((req,res)=>{
-    if(!req.url === '/'){
+    if(req.url === '/'){
         const htmlPath = path.join(__dirname,'public','index.html');
         const html = fs.readFileSync(htmlPath,'utf8');
         res.setHeader('Content-Type','text/html');
@@ -32,6 +32,8 @@ const server = http.createServer((req,res)=>{
         res.end();
     }
     else{
+        const lnk = req.url;
+        // Router.openRoute(lnk)
         const htmlPath = path.join(__dirname,'public','index.html');
         const html = fs.readFileSync(htmlPath,'utf8');
         res.setHeader('Content-Type','text/html');
