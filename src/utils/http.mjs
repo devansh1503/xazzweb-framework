@@ -6,6 +6,8 @@ class xazzAPI{
             return res.json();
         }).then((data)=>{
             result = data;
+        }).catch((err)=>{
+            throw err;
         })
         return result;
         // const response = await fetch(url)
@@ -14,68 +16,68 @@ class xazzAPI{
     }
 
     static async post(url,data,headers={}, timeout={}){
-        const controller = new AbortController()
+        // const controller = new AbortController()
         var result;
         var headr = !('headers' in headers)? {'Content-Type':'application/json'}:headers['headers']
         await fetch(url,{
             method:'POST',
-            headers:headr,
             body: JSON.stringify(data),
-            signal:controller
+            headers:headr,
+            // signal:controller
         }).then((res)=>{
             return res.json()
         }).then((data)=>{
             result = data;
-        }).then().catch((err)=>{
-            console.log(err)
+        }).catch((err)=>{
+            throw err
         })
-        if(JSON.stringify(timeout)!=="{}"){
-            setTimeout(()=>controller.abort(), timeout['timeout'])
-        }
+        // if(JSON.stringify(timeout)!=="{}"){
+        //     setTimeout(()=>controller.abort(), timeout['timeout'])
+        // }
         return result;
     }
     
-    static async update(url,data,headers={},timeout={}){
+    static async patch(url,data,headers={},timeout={}){
         var result;
-        const controller = new AbortController()
+        // const controller = new AbortController()
         var headr = !('headers' in headers)? {'Content-Type':'application/json'}:headers['headers']
         await fetch(url,{
             method:'PATCH',
-            headers:headr,
             body: JSON.stringify(data),
-            signal:controller
+            headers:headr,
+            // signal:controller
         }).then((res)=>{
             return res.json()
         }).then((data)=>{
             result =  data;
         }).catch((err)=>{
-            console.log(err)
+            throw err;
         })
-        if(JSON.stringify(timeout)!=="{}"){
-            setTimeout(()=>controller.abort(), timeout['timeout'])
-        }
+        // if(JSON.stringify(timeout)!=="{}"){
+        //     setTimeout(()=>controller.abort(), timeout['timeout'])
+        // }
         return result;
     }
 
     static async put(url,data,headers={},timeout={}){
         var result;
-        const controller = new AbortController()
+        // const controller = new AbortController()
         var headr = !('headers' in headers)? {'Content-Type':'application/json'}:headers['headers']
         await fetch(url,{
             method:'PUT',
             headers:headr,
             body: JSON.stringify(data),
-            signal:controller
+            // signal:controller
         }).then((res)=>{
             return res.json()
         }).then((data)=>{
             result = data;
         }).catch((err)=>{
-            console.log(err)
+            throw err;
         })
-        if(JSON.stringify(timeout)!=="{}"){
-            setTimeout(()=>controller.abort(), timeout['timeout'])
-        }
+        // if(JSON.stringify(timeout)!=="{}"){
+        //     setTimeout(()=>controller.abort(), timeout['timeout'])
+        // }
         return result;
     }
 
@@ -89,7 +91,7 @@ class xazzAPI{
         }).then(([...data])=>{
             return data;
         }).catch((err)=>{
-            console.log(err)
+            throw err;
         })
     }
 }

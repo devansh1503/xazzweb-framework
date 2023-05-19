@@ -1,5 +1,5 @@
 import XazzWeb from "../utils/dom.mjs";
-import storestate from "../utils/storage.js";
+import storestate from "../utils/storage.mjs";
 
 class State{
     constructor(val){
@@ -9,14 +9,17 @@ class State{
         storestate.push(val);
     }
     get(){
+        console.log(storestate[this.idx])
         return storestate[this.idx]
     }
     set(val){
         storestate[this.idx] = val;
         this.subscribers.map((ele)=>{
+            ele.innerHTML = this.get()
+            // ele.contentWindow.location.reload()
             //Here we will refresh the subscribers
         })
-    }
+    }   
     subscribe(ele){
         this.subscribers.push(ele)
     }

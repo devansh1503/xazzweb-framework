@@ -31,6 +31,10 @@ const server = http.createServer((req,res)=>{
         res.write(css);
         res.end();
     }
+    // else if(req.url === '/xazzwebtest'){
+    //     res.writeHead(200);
+    //     res.end({"ok":"xazzapi"})
+    // }
     else{
         const lnk = req.url;
         // Router.openRoute(lnk)
@@ -41,6 +45,7 @@ const server = http.createServer((req,res)=>{
         res.end();
     }
 })
+
 
 server.listen(3000, ()=>{
     console.log("😃 Your Website is being hosted ✨")

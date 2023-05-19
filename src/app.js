@@ -4,6 +4,7 @@ import wrap from "./democomps/counter.mjs";
 import docDiv from "./democomps/documention.mjs";
 import mainbody from "./democomps/mainbody.mjs";
 import navbar from "./democomps/navbar.mjs";
+import apidiv from "./democomps/xazzapidemo.mjs";
 import XazzWeb from "./utils/dom.mjs";
 
 
@@ -17,6 +18,7 @@ XazzWeb.AddToDomRoute('/doc', docDiv)
 XazzWeb.AddToDomRoute('/about', mainabout)
 XazzWeb.AddToDomRoute('/contact', contact)
 XazzWeb.AddToDomRoute('/counter',wrap)
+XazzWeb.AddToDomRoute('/api',apidiv)
 
 
 XazzWeb.renderDom();

@@ -11,8 +11,9 @@ const home = TextTag.create("p",{content:'Home', linkTo:'/'})
 const about = TextTag.create("p",{content:'About', linkTo:'/about'})
 const con = TextTag.create("p",{content:"Contacts",linkTo:'/contact'})
 const cnt = TextTag.create("p",{content:"Counter",linkTo:'/counter'})
+const api = TextTag.create("p",{content:"API Demo", linkTo:'/api'})
 
-const tabs = ListTag.create([home, about,doc,con], {className:"tabs"})
+const tabs = ListTag.create([home, about,doc,api,cnt,con], {className:"tabs"})
 
 Util.CreateChildren(navbar,[logo,tabs])
 

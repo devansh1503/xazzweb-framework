@@ -26,6 +26,10 @@ class InputTag{
         Util.CreateChildren(div,[label,ele])
         return div;
     }
+    static value(ele){
+        const res = ele.getElementsByTagName('input')[0].value;
+        return res
+    }
 }
 
 export default InputTag

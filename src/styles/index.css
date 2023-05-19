@@ -146,3 +146,18 @@ body{
     width: 170px;
     border-radius: 50%;
 }
+input{
+    font-size: 25px;
+    padding:10px;
+    border-radius:25px;
+}
+.postdiv{
+    width: 500px;
+    height: 300px;
+    color:rgb(255, 255, 255);
+    background-color: rgb(9, 32, 47);
+}
+.altapidiv{
+    background-color: rgb(57, 57, 57);
+    padding: 30px;
+}
